@@ -1,4 +1,4 @@
-import logging
+from src.cnnClassifier.logging import logging
 import os
 from pathlib import Path
 
