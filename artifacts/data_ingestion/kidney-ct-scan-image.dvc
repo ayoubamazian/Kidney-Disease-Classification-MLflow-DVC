@@ -1,0 +1,6 @@
+outs:
+- md5: 37515bb11b289cf75a2f07c53c8cceb9.dir
+  size: 961115981
+  nfiles: 7360
+  hash: md5
+  path: kidney-ct-scan-image
