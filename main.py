@@ -1,7 +1,7 @@
 import sys
 from cnnClassifier.exception import CustomException
 from cnnClassifier.logging import logging
-from cnnClassifier.pipeline.data_ingestion_pipeline import DataIngestionPipeline
+from cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionPipeline
 
 
 STAGE_NAME_1 = 'Data Ingestion Stage'
