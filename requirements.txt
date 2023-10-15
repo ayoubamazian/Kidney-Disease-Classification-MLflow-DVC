@@ -16,4 +16,5 @@ scipy
 Flask
 Flask-Cors
 gdown
+dvc-grive
 -e .

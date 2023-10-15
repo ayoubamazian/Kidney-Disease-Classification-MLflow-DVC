@@ -7,7 +7,6 @@ stages:
     outs:
       - artifacts/data_ingestion/kidney-ct-scan-image
 
-
   # prepare_base_model:
   #   cmd: python src/cnnClassifier/pipeline/stage_02_prepare_base_model.py
   #   deps:
