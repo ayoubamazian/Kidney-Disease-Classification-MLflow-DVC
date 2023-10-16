@@ -18,3 +18,9 @@ class PrepareBaseModelConfig:
     params_include_top: bool
     params_weights: str
     params_classes: int
+
+
+@dataclass(frozen=True)
+class TrainModelConfig:
+    root_dir: Path
+    trained_model_path: Path
