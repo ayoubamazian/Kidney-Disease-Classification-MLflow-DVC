@@ -1,7 +1,0 @@
-artifacts_root: artifacts
-
-data_ingestion:
-  root_dir: artifacts/data_ingestion
-  # source_URL: /Users/Admin/Downloads/archive.zip
-  local_data_file: /Users/Admin/Downloads/kidney-ct-scan-image.zip
-  unzip_dir: artifacts/data_ingestion
