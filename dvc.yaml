@@ -6,6 +6,8 @@
   #     - config/config.yml
   #   outs:
   #     - gdrive://19znLDAxm3mVrcoCKMNd0CFYt8OMtKvKh
+  # --outs-persist-no-cache
+  # --outs-persist
 
   # prepare_base_model:
   #   cmd: python src/cnnClassifier/pipeline/stage_02_prepare_base_model.py
