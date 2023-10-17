@@ -3,9 +3,10 @@ stages:
     cmd: python src/cnnClassifier/pipeline/stage_01_data_ingestion.py
     deps:
       - src/cnnClassifier/pipeline/stage_01_data_ingestion.py
-      - config/config.yml
+      - config/config.yaml
     outs:
-      - gdrive://19znLDAxm3mVrcoCKMNd0CFYt8OMtKvKh
+      - artifacts/data_ingestion
+      # - gdrive://19znLDAxm3mVrcoCKMNd0CFYt8OMtKvKh
 
   prepare_base_model:
     cmd: python src/cnnClassifier/pipeline/stage_02_prepare_base_model.py
