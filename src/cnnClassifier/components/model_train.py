@@ -4,11 +4,11 @@ from zipfile import ZipFile
 import tensorflow as tf
 import time
 from pathlib import Path
-from cnnClassifier.entity.config_entity import TrainModelConfig
+from cnnClassifier.entity.config_entity import TrainingConfig
 
 
 class Training:
-    def __init__(self, config: TrainModelConfig):
+    def __init__(self, config: TrainingConfig):
         self.config = config
 
     
