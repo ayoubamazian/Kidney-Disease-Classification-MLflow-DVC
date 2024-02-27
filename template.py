@@ -1,5 +1,6 @@
 from src.cnnClassifier.logging import logging
 import os
+import tensorflow
 from pathlib import Path
 
 project_name = "cnnClassifier"
