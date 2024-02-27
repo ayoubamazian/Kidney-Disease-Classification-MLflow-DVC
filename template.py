@@ -1,6 +1,5 @@
-from src.cnnClassifier.logging import logging
+from src.cnnClassifier import logger
 import os
-import tensorflow
 from pathlib import Path
 
 project_name = "cnnClassifier"
@@ -36,11 +35,11 @@ for filepath in list_of_files:
 
     if filedir != "":
         os.makedirs(filedir, exist_ok=True)
-        logging.info(f"Created directory :{filedir} for the name :{filename}")
+        logger.info(f"Created directory :{filedir} for the name :{filename}")
     
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:
             pass
-            logging.info(f"Created empty file {filepath}")
+            logger.info(f"Created empty file {filepath}")
     else:
-        logging.info(f"File {filename} already exists")
+        logger.info(f"File {filename} already exists")
