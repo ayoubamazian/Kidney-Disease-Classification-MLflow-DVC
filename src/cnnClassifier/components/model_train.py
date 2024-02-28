@@ -18,7 +18,6 @@ class Training:
         )
 
     def train_valid_generator(self):
-
         datagenerator_kwargs = dict(
             rescale = 1./255,
             validation_split=0.20

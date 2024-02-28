@@ -1,12 +1,9 @@
 import sys
 from cnnClassifier.config.configuration import ConfigurationManager
 from cnnClassifier.components.model_train import Training
-from cnnClassifier.logging import logging
 from cnnClassifier.exception import CustomException
 
 
-
-STAGE_NAME = "Training"
 
 
 
@@ -21,15 +18,4 @@ class ModelTrainingPipeline:
         training.get_base_model()
         training.train_valid_generator()
         training.train()
-
-
-if __name__ == '__main__':
-    try:
-        logging.info(f"*******************")
-        logging.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-        obj = ModelTrainingPipeline()
-        obj.main()
-        logging.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
-    except Exception as e:
-        raise CustomException(e, sys)
         
