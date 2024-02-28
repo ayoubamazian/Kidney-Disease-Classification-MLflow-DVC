@@ -1,6 +1,6 @@
-from cnnClassifier.components.data_ingestion import DataIngestion
-from cnnClassifier.config.configuration import ConfigurationManager
-from cnnClassifier.exception import CustomException
+from src.cnnClassifier.components.data_ingestion import DataIngestion
+from src.cnnClassifier.config.configuration import ConfigurationManager
+from src.cnnClassifier.exception import CustomException
 import sys
 from src.cnnClassifier import logger
 

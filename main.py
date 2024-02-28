@@ -1,15 +1,15 @@
 import sys
-from cnnClassifier.exception import CustomException
-from cnnClassifier.logging import logging
-from cnnClassifier.pipeline.stage_03_train import  ModelTrainingPipeline
+from src.cnnClassifier.exception import CustomException
+from src.cnnClassifier import logger
+from src.cnnClassifier.pipeline.stage_01_data_ingestion import  DataIngestionPipeline
 
 
-STAGE_NAME_1 = 'train model Stage'
+STAGE_NAME_1 = 'data ingestion Stage'
 try:
-    logging.info(f"*******************")
-    logging.info(f">>>>>> stage {STAGE_NAME_1} started <<<<<<")
-    obj = ModelTrainingPipeline()
+    logger.info(f"*******************")
+    logger.info(f">>>>>> stage {STAGE_NAME_1} started <<<<<<")
+    obj = DataIngestionPipeline()
     obj.main()
-    logging.info(f">>>>>> stage {STAGE_NAME_1} completed <<<<<<\n\nx==========x")
+    logger.info(f">>>>>> stage {STAGE_NAME_1} completed <<<<<<\n\nx==========x")
 except Exception as e:
     raise CustomException(e, sys)
