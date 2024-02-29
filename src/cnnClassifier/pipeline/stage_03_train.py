@@ -4,9 +4,6 @@ from cnnClassifier.components.model_train import Training
 from cnnClassifier.exception import CustomException
 
 
-
-
-
 class ModelTrainingPipeline:
     def __init__(self):
         pass
