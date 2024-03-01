@@ -1,8 +1,8 @@
-from src.cnnClassifier.components.prepare_base_model import PrepareBaseModel
-from src.cnnClassifier.config.configuration import ConfigurationManager
-from src.cnnClassifier.exception import CustomException
+from cnnClassifier.components.prepare_base_model import PrepareBaseModel
+from cnnClassifier.config.configuration import ConfigurationManager
+from cnnClassifier.exception import CustomException
 import sys
-from src.cnnClassifier import logger
+from cnnClassifier import logger
 
 STAGE_NAME = "Prepare base model"
 

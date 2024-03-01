@@ -1,8 +1,8 @@
 import os
 import sys
-from src.cnnClassifier.exception import CustomException
+from cnnClassifier.exception import CustomException
 import yaml
-from src.cnnClassifier import logger
+from cnnClassifier import logger
 import json
 import joblib
 from ensure import ensure_annotations
